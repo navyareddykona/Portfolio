@@ -150,40 +150,68 @@ html{
 }
 
 
-.progress-bars-wrapper{
+.skills-wrapper{
     margin-bottom: 10rem;
-
+    width: 80%;
+}
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 8px;
 }
 
-.progress-bar{
-    width: 60rem;
-    height: 3rem;
-    background-color: #ccc;
-    margin: 1.5rem 0;
-    border-radius: .3rem;
-    box-shadow: .2rem .2rem 1rem #555;
+.skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: .3rem .3rem .5rem #777;
     position: relative;
+    padding: 20px;
+    border-radius: 8px;  
+    text-align: center;  
+}
+    
+
+
+.skill i {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #e41c6f;
 }
 
-.progress-text{
-    position: absolute;
-    left: 1rem;
-    font-size: 1.5rem;
-    color: #fff;
+.skill-heading{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    letter-spacing: .2rem;
 }
 
-.progress-text span{
-    margin: 0.5rem;
-    font-size: 1.8rem;
-    font-weight: 700;
+.skill p {
+    font-size: 1.2rem;
+    margin: 0;
 }
-.progress-percent{
-    width: 90%;
-    height: 100%;
-    background-color: #e41c6f;
-    border-radius: .3rem;
-    transition: width .5s .5s ease-in-out;
-}
+
+
 
 .services{
     width: 100%;
@@ -191,6 +219,7 @@ html{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 .service{
     text-align: center;
@@ -432,8 +461,11 @@ html{
     .section-2-heading{
         text-align: center;
     }
-    .progress-bar{
-        width: 40rem;
+    
+}
+@media(min-width: 768px){
+    .skill{
+        flex: 0 1 45%;
     }
 }
 /*End of responsive*/
